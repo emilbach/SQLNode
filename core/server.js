@@ -16,7 +16,7 @@ http.createServer(function (req, resp) {
             else {
                 var IndiPath = indikatori.naziv;
                 var pat = new RegExp("/indikatori/" + IndiPath);
-                if (patt.test(req.url) {
+                if (patt.test(req.url)) {
                     patt = new RegExp(IndiPath);
                     var naziv = patt.exec(req.url);
                     indikatori.getIndikator(req, resp, naziv);
@@ -31,4 +31,4 @@ http.createServer(function (req, resp) {
     }
 }).listen(3001, function () { 
     console.log("The server is running");
-})
+});
